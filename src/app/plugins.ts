@@ -1,5 +1,7 @@
 /* eslint-disable @typescript-eslint/no-empty-function */
+import { FaucetPlugin } from '@liskhq/lisk-framework-faucet-plugin';
 import { Application } from 'lisk-sdk';
 
-// @ts-expect-error Unused variable error happens here until at least one module is registered
-export const registerPlugins = (app: Application): void => {};
+export const registerPlugins = (app: Application): void => {
+    app.registerPlugin(FaucetPlugin);
+};

@@ -34,6 +34,9 @@ Session.vim
 # Config files
 sftp-config.json
 .secrets
+config/accounts.json
+config/forging_info.json
+config/password.json
 
 # Coverage directory used by tools like istanbul
 .coverage/
